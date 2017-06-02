@@ -12,15 +12,116 @@
       "version": {
         "major": 0,
         "minor": 0,
-        "level": "alpha",
+        "level": "beta",
         "patch": 0
       }
-    }
+    },
+    "software": {
+      "display": {
+        "title": "Test Engine",
+        "label": "Test Engine"
+      }
+    },
+    "timestamp": "2017-06-02T03:41:08+00:00"
   },
   "software": {
     "base": {
+      "name": "test_engine",
+      "framework": "apache_php",
       "deployment_type": "web",
-      "http_protocol": "https_and_http"
-    }
+      "http_protocol": "https_and_http",
+      "memory": {
+        "required": 96,
+        "recommended": 96
+      },
+      "installation_report": "Built _Engines_Builder(engine_name)\r\ngoto to _Engines_Builder(http_protocol)://_Engines_Builder(fqdn)\r\nLogin  with an Engines mysql service's credentials\r\nHost: _Engines_Environment(dbhost)\r\nDB Name: _Engines_Environment(dbname\r\nDB User _Engines_Environment(dbuser)\r\nPassword _Engines_Environment(dbpasswd)"
+    },
+    "scripts": {
+      "install": {
+        "language": "sh",
+        "content": "#!/bin/bash\r\nmysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname) < /home/app/sql/create_tables.sql\r\n"
+      }
+    },
+    "system_packages": [
+      {
+        "package": "php-mcrypt"
+      },
+      {
+        "package": "mysql-client"
+      }
+    ],
+    "installed_packages": [
+      {
+        "name": "phpMyAdmin-4.6.4-all-languages.tar.gz",
+        "source_url": "http://files.phpmyadmin.net/phpMyAdmin/4.6.4/phpMyAdmin-4.6.4-all-languages.tar.gz",
+        "destination": "./",
+        "extraction_command": "tar -xzpf",
+        "path_to_extracted": "phpMyAdmin-4.6.4-all-languages"
+      }
+    ],
+    "service_configurations": [
+      {
+        "publisher_namespace": "EnginesSystem",
+        "type_path": "filesystem/local/filesystem",
+        "variables": {
+          "service_name": "_Engines_Builder(engine_name)",
+          "volume_src": "",
+          "engine_path": " test",
+          "permissions": "rw",
+          "user": "_Engines_Builder(data_uid)",
+          "group": "_Engines_Builder(data_gid)"
+        }
+      },
+      {
+        "publisher_namespace": "EnginesSystem",
+        "type_path": "database/sql/mysql",
+        "variables": {
+          "db_flavor": "mysql2",
+          "db_password": "_Engines_System(random(10))",
+          "collation": "utf8_general_ci",
+          "full_access": "false",
+          "name": "_Engines_Builder(engine_name)",
+          "database_host": "_Engines_System(mysql_host)",
+          "db_username": "_Engines_Builder(engine_name)",
+          "database_name": "_Engines_Builder(engine_name)"
+        }
+      }
+    ],
+    "template_files": [
+      {
+        "path": "app/sql/create_tables.sql",
+        "language": "text",
+        "content": "\r\nCREATE TABLE `action_tests` (\r\n  `tesitd` int(11) NOT NULL,\r\n  `name` varchar(64) NOT NULL,\r\n  `value` varchar(64) NOT NULL\r\n) ENGINE=InnoDB DEFAULT CHARSET=utf8;\r\n\r\n\r\nALTER TABLE `action_tests`\r\n  ADD PRIMARY KEY (`tesitd`);\r\n\r\nALTER TABLE `action_tests`\r\n  MODIFY `tesitd` int(11) NOT NULL AUTO_INCREMENT;"
+      }
+    ],
+    "database_seed": {
+      "language": "sql",
+      "content": "INSERT INTO `action_tests` (`tesitd`, `name`, `value`) VALUES (NULL, 'name1', 'value1');"
+    },
+    "actionators": [
+      {
+        "name": "list_test",
+        "label": "List Text",
+        "return_type": "plain_text",
+        "script": {
+          "language": "sh",
+          "content": "#!/bin/bash\r\necho \"select * from action_tests \" | mysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname)"
+        }
+      },
+      {
+        "name": "add_nvp",
+        "label": "Add entry",
+        "return_type": "none",
+        "script": {
+          "language": "sh",
+          "content": "#!/bin/bash\r\n\r\necho \"INSERT INTO `action_tests` (`tesitd`, `name`, `value`) VALUES (NULL, 'testname', 'testvalue'); \"| mysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname)"
+        }
+      },
+      {
+        "name": "rm_test_entry",
+        "label": "Remove test entry",
+        "return_type": "none"
+      }
+    ]
   }
 }
