@@ -22,11 +22,11 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-02 04:17:29 UTC"
+    "timestamp": "2017-06-02 08:01:07 UTC"
   },
   "software": {
     "base": {
-      "name": "test_engine",
+      "name": "testengine",
       "framework": "apache_php",
       "deployment_type": "web",
       "http_protocol": "https_and_http",
