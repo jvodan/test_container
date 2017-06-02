@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-02T03:41:08+00:00"
+    "timestamp": "2017-06-02 04:17:29 UTC"
   },
   "software": {
     "base": {
@@ -112,15 +112,67 @@
         "name": "add_nvp",
         "label": "Add entry",
         "return_type": "none",
+        "variables": [
+          {
+            "name": "name",
+            "input": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "value",
+            "input": {
+              "type": "string"
+            }
+          }
+        ],
         "script": {
           "language": "sh",
-          "content": "#!/bin/bash\r\n\r\necho \"INSERT INTO `action_tests` (`tesitd`, `name`, `value`) VALUES (NULL, 'testname', 'testvalue'); \"| mysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname)"
+          "content": "#!/bin/bash\r\ncat -  | /home/engines/bin/json_to_env >/tmp/.env\r\n.tmp/.env\r\necho \"INSERT INTO action_tests (tesitd, name, value) VALUES (NULL, '$name', '$value'); \"| mysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname)"
         }
       },
       {
         "name": "rm_test_entry",
         "label": "Remove test entry",
-        "return_type": "none"
+        "return_type": "none",
+        "variables": [
+          {
+            "name": "name",
+            "input": {
+              "type": "string"
+            }
+          }
+        ],
+        "script": {
+          "content": "#!/bin/bash\r\ncat -  | /home/engines/bin/json_to_env >/tmp/.env\r\n.tmp/.env\r\n\r\necho \"delete from action_tests where name = '$name';\"| mysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname)"
+        }
+      }
+    ],
+    "schedules": [
+      {
+        "label": "midnight",
+        "timespec": {
+          "minute": "12",
+          "hour": "0",
+          "day_of_month": "*",
+          "month": "*",
+          "day_of_week": "*"
+        },
+        "instruction": "restart"
+      },
+      {
+        "label": "list users",
+        "timespec": {
+          "minute": "13",
+          "hour": "0",
+          "day_of_month": "*",
+          "month": "*",
+          "day_of_week": "*"
+        },
+        "instruction": "action",
+        "actionator": {
+          "name": "list_test"
+        }
       }
     ]
   }
