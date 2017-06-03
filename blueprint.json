@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-03T04:06:50+00:00"
+    "timestamp": "2017-06-03 06:07:31 UTC"
   },
   "software": {
     "base": {
@@ -74,6 +74,9 @@
     "system_packages": [
       {
         "package": "mysql-client"
+      },
+      {
+        "package": "make"
       }
     ],
     "installed_packages": [
