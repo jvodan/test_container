@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-03 02:08:45 UTC"
+    "timestamp": "2017-06-03 02:14:42 UTC"
   },
   "software": {
     "base": {
@@ -227,7 +227,7 @@
         "return_type": "plain_text",
         "script": {
           "language": "sh",
-          "content": "#!/bash/bin\r\n\r\nls -Rl /home/fs/test/"
+          "content": "#!/bin/bash\r\n\r\nls -Rl /home/fs/test/"
         }
       }
     ],
