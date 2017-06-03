@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-03 02:42:39 UTC"
+    "timestamp": "2017-06-03 02:48:42 UTC"
   },
   "software": {
     "base": {
@@ -71,6 +71,10 @@
         "content": "#!/bin/bash\r\n\r\ntouch /home/app/persistent/shutdown"
       }
     },
+    "external_repositories": [
+      {
+      }
+    ],
     "system_packages": [
       {
         "package": "mysql-client"
@@ -163,6 +167,16 @@
     "file_write_permissions": [
       {
         "path": "app/fresh_file_perm_test"
+      },
+      {
+        "path": "app/test_package_dest/test_write_file"
+      },
+      {
+        "path": "app/test_package_dest/test_write_dir"
+      },
+      {
+        "path": "app/test_package_dest/test_write_rec_dir",
+        "recursive": true
       }
     ],
     "persistent_directories": [
@@ -177,11 +191,17 @@
       },
       {
         "path": "/home/home_dir/home_dir_persist"
+      },
+      {
+        "path": "app/test_package_dest/test_persist_dir"
       }
     ],
     "persistent_files": [
       {
-        "path": "test_persistent_file"
+        "path": "fresh_test_persistent_file"
+      },
+      {
+        "path": "app/test_package_dest/test_persist_file"
       }
     ],
     "workers": {
