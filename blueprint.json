@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-03 02:28:39 UTC"
+    "timestamp": "2017-06-03 02:42:39 UTC"
   },
   "software": {
     "base": {
@@ -83,6 +83,13 @@
         "destination": "./",
         "extraction_command": "tar -xzpf",
         "path_to_extracted": "phpMyAdmin-4.6.4-all-languages"
+      },
+      {
+        "name": "test_package",
+        "source_url": "https://github.com/EnginesBlueprints/test_package.git",
+        "destination": "test_package_dest",
+        "extraction_command": "git",
+        "path_to_extracted": "test_package"
       }
     ],
     "required_modules": [
@@ -163,7 +170,13 @@
         "path": "app/fresh_dir_perm_test"
       },
       {
-        "path": "persistent"
+        "path": "home_persistent"
+      },
+      {
+        "path": "/usr/local/local_persist"
+      },
+      {
+        "path": "/home/home_dir/home_dir_persist"
       }
     ],
     "persistent_files": [
