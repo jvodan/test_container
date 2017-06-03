@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-03 02:49:36 UTC"
+    "timestamp": "2017-06-03 03:10:18 UTC"
   },
   "software": {
     "base": {
@@ -71,10 +71,6 @@
         "content": "#!/bin/bash\r\n\r\ntouch /home/app/persistent/shutdown"
       }
     },
-    "external_repositories": [
-      {
-      }
-    ],
     "system_packages": [
       {
         "package": "mysql-client"
