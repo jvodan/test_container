@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-03 04:04:32 UTC"
+    "timestamp": "2017-06-03 04:06:50 UTC"
   },
   "software": {
     "base": {
@@ -132,7 +132,7 @@
         "variables": {
           "service_name": "_Engines_Builder(engine_name)_data",
           "volume_src": "",
-          "engine_path": " fstwo",
+          "engine_path": "fstwo",
           "permissions": "rw",
           "user": "_Engines_Builder(data_uid)",
           "group": "_Engines_Builder(data_gid)"
