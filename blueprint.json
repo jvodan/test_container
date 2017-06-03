@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-03 02:02:47 UTC"
+    "timestamp": "2017-06-03 02:06:24 UTC"
   },
   "software": {
     "base": {
@@ -145,8 +145,8 @@
     "replacement_strings": [
       {
         "string": "/TBLE/s//TABLE",
-        "source_file": "/home/app/sql/create_tables.sql",
-        "destination_file": "/home/app/sql/create_tables.sql"
+        "source_file": "/sql/create_tables.sql",
+        "destination_file": "/sql/create_tables.sql"
       }
     ],
     "database_seed": {
