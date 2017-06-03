@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-03 03:22:10 UTC"
+    "timestamp": "2017-06-03 04:04:32 UTC"
   },
   "software": {
     "base": {
@@ -130,7 +130,7 @@
         "publisher_namespace": "EnginesSystem",
         "type_path": "filesystem/local/filesystem",
         "variables": {
-          "service_name": "_Engines_Builder(engine_name)",
+          "service_name": "_Engines_Builder(engine_name)_data",
           "volume_src": "",
           "engine_path": " fstwo",
           "permissions": "rw",
