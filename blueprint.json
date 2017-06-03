@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-03 02:14:42 UTC"
+    "timestamp": "2017-06-03 02:27:40 UTC"
   },
   "software": {
     "base": {
@@ -155,12 +155,17 @@
     },
     "file_write_permissions": [
       {
-        "path": "fresh_file_perm_test"
+        "path": "app/fresh_file_perm_test"
       }
     ],
     "persistent_directories": [
       {
         "path": "app/fresh_dir_perm_test"
+      }
+    ],
+    "persistent_files": [
+      {
+        "path": "test_persistent_file"
       }
     ],
     "workers": {
