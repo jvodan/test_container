@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-03 02:27:40 UTC"
+    "timestamp": "2017-06-03 02:28:39 UTC"
   },
   "software": {
     "base": {
@@ -161,6 +161,9 @@
     "persistent_directories": [
       {
         "path": "app/fresh_dir_perm_test"
+      },
+      {
+        "path": "persistent"
       }
     ],
     "persistent_files": [
