@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-04 09:19:48 UTC"
+    "timestamp": "2017-06-04 09:26:27 UTC"
   },
   "software": {
     "base": {
@@ -205,6 +205,9 @@
       },
       {
         "path": "app/test_package_dest/test_persist_dir"
+      },
+      {
+        "path": "app/persistent"
       }
     ],
     "persistent_files": [
