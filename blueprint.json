@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-04 23:09:17 UTC"
+    "timestamp": "2017-06-04 23:59:09 UTC"
   },
   "software": {
     "base": {
@@ -71,6 +71,11 @@
         "content": "#!/bin/bash\r\n\r\ntouch /home/app/persistent/shutdown"
       }
     },
+    "external_repositories": [
+      {
+        "source": "ppa:opencpn/opencpn"
+      }
+    ],
     "system_packages": [
       {
         "package": "mysql-client"
@@ -93,6 +98,12 @@
         "destination": "test_package_dest",
         "extraction_command": "git",
         "path_to_extracted": "test_package"
+      },
+      {
+        "name": "build_tests",
+        "source_url": "https://github.com/EnginesBlueprints/build_tests",
+        "destination": "engine_tests",
+        "path_to_extracted": "build_tests"
       }
     ],
     "required_modules": [
@@ -317,6 +328,12 @@
       "custom_php_inis": [
         {
           "content": "#test_php_ini"
+        }
+      ],
+      "apache_htaccess_files": [
+        {
+          "directory": "setup",
+          "content": "#test htacess"
         }
       ],
       "apache_httpd_configurations": [
