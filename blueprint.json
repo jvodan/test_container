@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-04 23:59:09 UTC"
+    "timestamp": "2017-06-05 00:13:01 UTC"
   },
   "software": {
     "base": {
@@ -103,6 +103,7 @@
         "name": "build_tests",
         "source_url": "https://github.com/EnginesBlueprints/build_tests",
         "destination": "engine_tests",
+        "extraction_command": "git",
         "path_to_extracted": "build_tests"
       }
     ],
