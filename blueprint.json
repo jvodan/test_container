@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-05 00:13:01 UTC"
+    "timestamp": "2017-06-05 00:48:53 UTC"
   },
   "software": {
     "base": {
@@ -189,16 +189,20 @@
     },
     "file_write_permissions": [
       {
-        "path": "app/fresh_file_perm_test"
+        "path": "fresh_file_perm_test"
       },
       {
-        "path": "app/test_package_dest/test_write_file"
+        "path": "test_package_dest/test_write_file"
       },
       {
-        "path": "app/test_package_dest/test_write_dir"
+        "path": "test_package_dest/test_write_dir"
       },
       {
-        "path": "app/test_package_dest/test_write_rec_dir",
+        "path": "test_package_dest/test_write_rec_dir",
+        "recursive": true
+      },
+      {
+        "path": "fresh_dir_perm_test",
         "recursive": true
       }
     ],
