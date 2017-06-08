@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-05 00:48:53 UTC"
+    "timestamp": "2017-06-08 06:58:31 UTC"
   },
   "software": {
     "base": {
@@ -273,7 +273,7 @@
         ],
         "script": {
           "language": "sh",
-          "content": "#!/bin/bash\r\ncat -  | /home/engines/bin/json_to_env >/tmp/.env\r\n.tmp/.env\r\necho \"INSERT INTO action_tests (tesitd, name, value) VALUES (NULL, '$name', '$value'); \"| mysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname)"
+          "content": "#!/bin/bash\r\ncat -  | /home/engines/bin/json_to_env >/tmp/.env\r\n.tmp/.env\r\necho \"INSERT INTO action_tests (tesitd, name, value) VALUES ('$name', '$value'); \"| mysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname)"
         }
       },
       {
