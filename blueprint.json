@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-08 07:09:06 UTC"
+    "timestamp": "2017-06-08 07:09:35 UTC"
   },
   "software": {
     "base": {
@@ -256,7 +256,7 @@
       {
         "name": "add_nvp",
         "label": "Add entry",
-        "return_type": "none",
+        "return_type": "plain_text",
         "variables": [
           {
             "name": "name",
