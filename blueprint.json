@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-08 07:09:35 UTC"
+    "timestamp": "2017-06-09 07:48:58 UTC"
   },
   "software": {
     "base": {
@@ -161,6 +161,25 @@
         "ask_at_build_time": true,
         "input": {
           "type": "string"
+        }
+      },
+      {
+        "name": "mandatory",
+        "mandatory": true,
+        "ask_at_build_time": true,
+        "input": {
+          "type": "string",
+          "title": "mandatort test"
+        }
+      },
+      {
+        "name": "buildtime_only",
+        "mandatory": true,
+        "ask_at_build_time": true,
+        "build_time_only": true,
+        "input": {
+          "type": "string",
+          "title": "buildtime_only test"
         }
       }
     ],
