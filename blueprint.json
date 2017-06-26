@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-09 07:48:58 UTC"
+    "timestamp": "2017-06-26T11:16:54+10:00"
   },
   "software": {
     "base": {
@@ -34,7 +34,7 @@
         "required": 96,
         "recommended": 96
       },
-      "installation_report": "Built _Engines_Builder(engine_name)\r\ngoto to _Engines_Builder(http_protocol)://_Engines_Builder(fqdn)\r\nLogin  with an Engines mysql service's credentials\r\nHost: _Engines_Environment(dbhost)\r\nDB Name: _Engines_Environment(dbname\r\nDB User _Engines_Environment(dbuser)\r\nPassword _Engines_Environment(dbpasswd)"
+      "installation_report": "Built _Engines_Builder(engine_name)\r\ngoto to _Engines_Builder(http_protocol)://_Engines_Builder(fqdn)\r\nLogin  with an Engines mysql service's credentials\r\nHost: _Engines_Environment(dbhost)\r\nDB Name: _Engines_Environment(dbname)\r\nDB User _Engines_Environment(dbuser)\r\nPassword _Engines_Environment(dbpasswd)"
     },
     "ports": [
       {
@@ -292,7 +292,7 @@
         ],
         "script": {
           "language": "sh",
-          "content": "#!/bin/bash\r\ncat -  | /home/engines/bin/json_to_env >/tmp/.env\r\n.tmp/.env\r\necho \"INSERT INTO action_tests (name, value) VALUES ('$name', '$value'); \"| mysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname)"
+          "content": "#!/bin/bash\r\n. /home/engines/functions/params_to_env.sh\r\nparms_to_env\r\necho \"INSERT INTO action_tests (name, value) VALUES ('$name', '$value'); \"| mysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname)"
         }
       },
       {
@@ -308,7 +308,7 @@
           }
         ],
         "script": {
-          "content": "#!/bin/bash\r\ncat -  | /home/engines/bin/json_to_env >/tmp/.env\r\n.tmp/.env\r\n\r\necho \"delete from action_tests where name = '$name';\"| mysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname)"
+          "content": "#!/bin/bash\r\n. /home/engines/functions/params_to_env.sh\r\nparms_to_env\r\n\r\necho \"delete from action_tests where name = '$name';\"| mysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname)"
         }
       },
       {
