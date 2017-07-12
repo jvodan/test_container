@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-06-26T11:16:54+10:00"
+    "timestamp": "2017-07-12T10:12:27+10:00"
   },
   "software": {
     "base": {
@@ -151,6 +151,20 @@
           "permissions": "rw",
           "user": "_Engines_Builder(data_uid)",
           "group": "_Engines_Builder(data_gid)"
+        }
+      },
+      {
+        "publisher_namespace": "EnginesSystem",
+        "type_path": "database/sql/mysql",
+        "variables": {
+          "db_flavor": "mysql2",
+          "db_password": "_Engines_System(random(10))",
+          "collation": "utf8_general_ci",
+          "full_access": "false",
+          "name": "_Engines_Builder(engine_name)_db2",
+          "database_host": "_Engines_System(mysql_host)",
+          "db_username": "_Engines_Builder(engine_name)_db2",
+          "database_name": "_Engines_Builder(engine_name)_db2"
         }
       }
     ],
@@ -308,7 +322,7 @@
           }
         ],
         "script": {
-          "content": "#!/bin/bash\r\n. /home/engines/functions/params_to_env.sh\r\nparms_to_env\r\n\r\necho \"delete from action_tests where name = '$name';\"| mysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname)"
+          "content": "#!/bin/bash\r\n. /home/engines/functions/params_to_env.sh\r\nparms_to_env\r\n\r\necho \"delete from action_tests where name = '$name';\"| mysql -h _Engines_System(mysql_host) -u _Engines_Environment(dbuser)  --password=_Engines_Environment(dbpasswd)  _Engines_Environment(dbname) >/dev/null"
         }
       },
       {
