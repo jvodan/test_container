@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-07-12T10:12:27+10:00"
+    "timestamp": "2017-07-12T10:17:17+10:00"
   },
   "software": {
     "base": {
@@ -253,18 +253,22 @@
         "path": "/home/home_dir/home_dir_persist"
       },
       {
-        "path": "app/test_package_dest/test_persist_dir"
+        "path": "app/test_package_dest/test_persist_dir",
+        "volume_name": "_Engines_Builder(engine_name)"
       },
       {
-        "path": "app/persistent"
+        "path": "app/persistent",
+        "volume_name": "_Engines_Builder(engine_name)_data"
       }
     ],
     "persistent_files": [
       {
-        "path": "fresh_test_persistent_file"
+        "path": "fresh_test_persistent_file",
+        "volume_name": "_Engines_Builder(engine_name)"
       },
       {
-        "path": "app/test_package_dest/test_persist_file"
+        "path": "app/test_package_dest/test_persist_file",
+        "volume_name": "_Engines_Builder(engine_name)_data"
       }
     ],
     "workers": {
