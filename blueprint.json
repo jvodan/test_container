@@ -2,8 +2,8 @@
   "schema": {
     "type": "app_blueprint",
     "version": {
-      "major": 1,
-      "minor": 0
+      "major": 0,
+      "minor": 1
     },
     "origin": "Engines Developer Studio 0.2"
   },
@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-07-12T10:17:17+10:00"
+    "timestamp": "2017-12-29T10:29:45+11:00"
   },
   "software": {
     "base": {
@@ -38,18 +38,18 @@
     },
     "ports": [
       {
-        "port": 12345,
-        "external": 12345,
+        "port": "12345",
+        "external": "12345",
         "protocol": "tcp"
       },
       {
-        "port": 12346,
-        "external": 12346,
+        "port": "12346",
+        "external": "12346",
         "protocol": "udp"
       },
       {
-        "port": 12347,
-        "external": 12347,
+        "port": "12347",
+        "external": "12347",
         "protocol": "tcp_and_udp"
       }
     ],
@@ -121,7 +121,7 @@
         "variables": {
           "service_name": "_Engines_Builder(engine_name)",
           "volume_src": "",
-          "engine_path": "test",
+          "engine_path": "/home/fs/test",
           "permissions": "rw",
           "user": "_Engines_Builder(data_uid)",
           "group": "_Engines_Builder(data_gid)"
@@ -131,14 +131,12 @@
         "publisher_namespace": "EnginesSystem",
         "type_path": "database/sql/mysql",
         "variables": {
-          "db_flavor": "mysql2",
-          "db_password": "_Engines_System(random(10))",
-          "collation": "utf8_general_ci",
-          "full_access": "false",
-          "name": "_Engines_Builder(engine_name)",
+          "database_name": "_Engines_Builder(engine_name)",
           "database_host": "_Engines_System(mysql_host)",
           "db_username": "_Engines_Builder(engine_name)",
-          "database_name": "_Engines_Builder(engine_name)"
+          "db_password": "_Engines_System(random(10))",
+          "collation": "utf8_general_ci",
+          "full_access": "false"
         }
       },
       {
@@ -147,7 +145,7 @@
         "variables": {
           "service_name": "_Engines_Builder(engine_name)_data",
           "volume_src": "",
-          "engine_path": "fstwo",
+          "engine_path": "/home/fs/fstwo",
           "permissions": "rw",
           "user": "_Engines_Builder(data_uid)",
           "group": "_Engines_Builder(data_gid)"
@@ -157,14 +155,12 @@
         "publisher_namespace": "EnginesSystem",
         "type_path": "database/sql/mysql",
         "variables": {
-          "db_flavor": "mysql2",
+          "database_name": "_Engines_Builder(engine_name)_db2",
+          "database_host": "",
+          "db_username": "_Engines_Builder(engine_name)_db2",
           "db_password": "_Engines_System(random(10))",
           "collation": "utf8_general_ci",
-          "full_access": "false",
-          "name": "_Engines_Builder(engine_name)_db2",
-          "database_host": "_Engines_System(mysql_host)",
-          "db_username": "_Engines_Builder(engine_name)_db2",
-          "database_name": "_Engines_Builder(engine_name)_db2"
+          "full_access": "false"
         }
       }
     ],
@@ -241,16 +237,20 @@
     ],
     "persistent_directories": [
       {
-        "path": "app/fresh_dir_perm_test"
+        "path": "app/fresh_dir_perm_test",
+        "volume_name": "_Engines_Builder(engine_name)"
       },
       {
-        "path": "home_persistent"
+        "path": "home_persistent",
+        "volume_name": "_Engines_Builder(engine_name)"
       },
       {
-        "path": "/usr/local/local_persist"
+        "path": "/usr/local/local_persist",
+        "volume_name": "_Engines_Builder(engine_name)"
       },
       {
-        "path": "/home/home_dir/home_dir_persist"
+        "path": "/home/home_dir/home_dir_persist",
+        "volume_name": "_Engines_Builder(engine_name)"
       },
       {
         "path": "app/test_package_dest/test_persist_dir",
