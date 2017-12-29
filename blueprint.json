@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-12-29T10:29:45+11:00"
+    "timestamp": "2017-12-29T15:22:02+11:00"
   },
   "software": {
     "base": {
@@ -119,7 +119,7 @@
         "publisher_namespace": "EnginesSystem",
         "type_path": "filesystem/local/filesystem",
         "variables": {
-          "service_name": "_Engines_Builder(engine_name)",
+          "service_name": null,
           "volume_src": "",
           "engine_path": "/home/fs/test",
           "permissions": "rw",
@@ -143,7 +143,7 @@
         "publisher_namespace": "EnginesSystem",
         "type_path": "filesystem/local/filesystem",
         "variables": {
-          "service_name": "_Engines_Builder(engine_name)_data",
+          "service_name": "data",
           "volume_src": "",
           "engine_path": "/home/fs/fstwo",
           "permissions": "rw",
@@ -258,7 +258,7 @@
       },
       {
         "path": "app/persistent",
-        "volume_name": "_Engines_Builder(engine_name)_data"
+        "volume_name": "data"
       }
     ],
     "persistent_files": [
@@ -268,7 +268,7 @@
       },
       {
         "path": "app/test_package_dest/test_persist_file",
-        "volume_name": "_Engines_Builder(engine_name)_data"
+        "volume_name": "data"
       }
     ],
     "workers": {
