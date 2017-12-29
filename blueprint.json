@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-12-29T15:22:02+11:00"
+    "timestamp": "2017-12-29T16:41:33+11:00"
   },
   "software": {
     "base": {
@@ -119,7 +119,7 @@
         "publisher_namespace": "EnginesSystem",
         "type_path": "filesystem/local/filesystem",
         "variables": {
-          "service_name": null,
+          "service_name": "_Engines_Builder(engine_name)",
           "volume_src": "",
           "engine_path": "/home/fs/test",
           "permissions": "rw",
