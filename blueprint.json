@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2017-12-29T16:41:33+11:00"
+    "timestamp": "2018-01-03T14:45:16+11:00"
   },
   "software": {
     "base": {
@@ -238,37 +238,37 @@
     "persistent_directories": [
       {
         "path": "app/fresh_dir_perm_test",
-        "volume_name": "_Engines_Builder(engine_name)"
+        "volume_name": "test"
       },
       {
         "path": "home_persistent",
-        "volume_name": "_Engines_Builder(engine_name)"
+        "volume_name": "test"
       },
       {
         "path": "/usr/local/local_persist",
-        "volume_name": "_Engines_Builder(engine_name)"
+        "volume_name": "test"
       },
       {
         "path": "/home/home_dir/home_dir_persist",
-        "volume_name": "_Engines_Builder(engine_name)"
+        "volume_name": "test"
       },
       {
         "path": "app/test_package_dest/test_persist_dir",
-        "volume_name": "_Engines_Builder(engine_name)"
+        "volume_name": "test"
       },
       {
         "path": "app/persistent",
-        "volume_name": "data"
+        "volume_name": "fstwo"
       }
     ],
     "persistent_files": [
       {
         "path": "fresh_test_persistent_file",
-        "volume_name": "_Engines_Builder(engine_name)"
+        "volume_name": "test"
       },
       {
         "path": "app/test_package_dest/test_persist_file",
-        "volume_name": "data"
+        "volume_name": "fstwo"
       }
     ],
     "workers": {
