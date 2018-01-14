@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2018-01-12T12:51:12+11:00"
+    "timestamp": "2018-01-14T13:55:37+11:00"
   },
   "software": {
     "base": {
@@ -351,7 +351,7 @@
         "instruction": "restart"
       },
       {
-        "label": "list users",
+        "label": "list_users",
         "timespec": {
           "minute": "13",
           "hour": "0",
