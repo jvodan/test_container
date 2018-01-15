@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2018-01-14T13:55:37+11:00"
+    "timestamp": "2018-01-15T14:35:13+11:00"
   },
   "software": {
     "base": {
@@ -240,7 +240,7 @@
         "volume_name": "_Engines_Builder(engine_name)"
       },
       {
-        "path": "home_persistent",
+        "path": "app/home_persistent",
         "volume_name": "_Engines_Builder(engine_name)"
       },
       {
@@ -262,7 +262,7 @@
     ],
     "persistent_files": [
       {
-        "path": "fresh_test_persistent_file",
+        "path": "app/fresh_test_persistent_file",
         "volume_name": "_Engines_Builder(engine_name)"
       },
       {
