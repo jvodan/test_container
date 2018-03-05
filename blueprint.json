@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2018-03-05T14:16:50+11:00"
+    "timestamp": "2018-03-05T14:17:27+11:00"
   },
   "software": {
     "base": {
@@ -173,7 +173,7 @@
           "write_access": "none",
           "access_dn": "uid=_Engines_Builder(engine_name),ou=_Engines_Builder(ctype).,ou=hosts,ou=Engines,dc=engines,dc=internal",
           "ldap_password": "_Engines_System(random(8))",
-          "service_name": "_Engines_Fields(cn)__Engines_Fields(type)"
+          "service_name": null
         }
       },
       {
