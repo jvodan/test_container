@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2018-03-06T12:18:58+11:00"
+    "timestamp": "2018-03-06T13:57:09+11:00"
   },
   "software": {
     "base": {
@@ -167,25 +167,10 @@
         "publisher_namespace": "EnginesSystem",
         "type_path": "ldap",
         "variables": {
-          "type": "access",
-          "cn": "_Engines_Builder(engine_name)",
-          "read_access": "all",
-          "write_access": "none",
-          "access_dn": "uid=_Engines_Builder(engine_name),ou=_Engines_Builder(ctype).,ou=hosts,ou=Engines,dc=engines,dc=internal",
-          "ldap_password": "_Engines_System(random(8))",
-          "service_name": "ldap_access"
-        }
-      },
-      {
-        "publisher_namespace": "EnginesSystem",
-        "type_path": "ldap",
-        "variables": {
           "type": "ou",
           "cn": "_Engines_Builder(engine_name)",
           "read_access": "all",
           "write_access": "none",
-          "access_dn": "uid=_Engines_Builder(engine_name),ou=_Engines_Builder(ctype).,ou=hosts,ou=Engines,dc=engines,dc=internal",
-          "ldap_password": "_Engines_System(random(8))",
           "service_name": "ldapou"
         }
       },
@@ -197,9 +182,17 @@
           "cn": "_Engines_Builder(engine_name)",
           "read_access": "all",
           "write_access": "none",
-          "access_dn": "uid=_Engines_Builder(engine_name),ou=_Engines_Builder(ctype).,ou=hosts,ou=Engines,dc=engines,dc=internal",
-          "ldap_password": "_Engines_System(random(8))",
           "service_name": "ldapgrp"
+        }
+      },
+      {
+        "publisher_namespace": "EnginesSystem",
+        "type_path": "ldap_access",
+        "variables": {
+          "access_dn": "uid=_Engines_Builder(engine_name),ou=hosts,ou=Engines,dc=engines,dc=internal",
+          "ldap_password": "_Engines_System(random(8))",
+          "service_name": "_Engines_Builder(engine_name)",
+          "type": "access"
         }
       }
     ],
