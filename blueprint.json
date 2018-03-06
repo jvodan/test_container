@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2018-03-05T14:43:51+11:00"
+    "timestamp": "2018-03-06T11:58:22+11:00"
   },
   "software": {
     "base": {
@@ -275,11 +275,11 @@
     ],
     "persistent_directories": [
       {
-        "path": "app/fresh_dir_perm_test",
+        "path": "/home/app/fresh_dir_perm_test",
         "volume_name": "_Engines_Builder(engine_name)"
       },
       {
-        "path": "app/home_persistent",
+        "path": "/home/app/home_persistent",
         "volume_name": "_Engines_Builder(engine_name)"
       },
       {
@@ -291,11 +291,11 @@
         "volume_name": "_Engines_Builder(engine_name)"
       },
       {
-        "path": "app/test_package_dest/test_persist_dir",
+        "path": "/home/app/test_package_dest/test_persist_dir",
         "volume_name": "_Engines_Builder(engine_name)"
       },
       {
-        "path": "app/persistent",
+        "path": "/home/app/persistent",
         "volume_name": "data"
       }
     ],
