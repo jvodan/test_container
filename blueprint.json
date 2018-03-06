@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2018-03-06T12:16:16+11:00"
+    "timestamp": "2018-03-06T12:18:58+11:00"
   },
   "software": {
     "base": {
@@ -255,9 +255,6 @@
       "content": "INSERT INTO `action_tests` (`tesitd`, `name`, `value`) VALUES (NULL, 'name1', 'value1');"
     },
     "file_write_permissions": [
-      {
-        "path": "fresh_file_perm_test"
-      },
       {
         "path": "test_package_dest/test_write_file"
       },
