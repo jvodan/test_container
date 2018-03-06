@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2018-03-06T11:58:22+11:00"
+    "timestamp": "2018-03-06T12:16:16+11:00"
   },
   "software": {
     "base": {
@@ -266,10 +266,6 @@
       },
       {
         "path": "test_package_dest/test_write_rec_dir",
-        "recursive": true
-      },
-      {
-        "path": "fresh_dir_perm_test",
         "recursive": true
       }
     ],
