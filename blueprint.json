@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2019-09-19T08:17:10+10:00"
+    "timestamp": "2019-09-19T09:40:24+10:00"
   },
   "software": {
     "base": {
@@ -105,13 +105,6 @@
         "destination": "engine_tests",
         "extraction_command": "git",
         "path_to_extracted": "build_tests"
-      }
-    ],
-    "required_modules": [
-      {
-        "name": "mcrypt",
-        "type": "php",
-        "os_package": "php-mcrypt"
       }
     ],
     "service_configurations": [
