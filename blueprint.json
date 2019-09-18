@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2018-03-06T13:57:09+11:00"
+    "timestamp": "2019-09-19T08:17:10+10:00"
   },
   "software": {
     "base": {
@@ -124,7 +124,9 @@
           "engine_path": "/home/fs/test",
           "permissions": "rw",
           "user": "_Engines_Builder(data_uid)",
-          "group": "_Engines_Builder(data_gid)"
+          "group": "_Engines_Builder(data_gid)",
+          "fw_user": "_Engines_Builder(cont_user_id)",
+          "exclude_from_backup": "false"
         }
       },
       {
@@ -148,7 +150,9 @@
           "engine_path": "/home/fs/fstwo",
           "permissions": "rw",
           "user": "_Engines_Builder(data_uid)",
-          "group": "_Engines_Builder(data_gid)"
+          "group": "_Engines_Builder(data_gid)",
+          "fw_user": "_Engines_Builder(cont_user_id)",
+          "exclude_from_backup": "false"
         }
       },
       {
@@ -165,34 +169,35 @@
       },
       {
         "publisher_namespace": "EnginesSystem",
-        "type_path": "ldap",
-        "variables": {
-          "type": "ou",
-          "cn": "_Engines_Builder(engine_name)",
-          "read_access": "all",
-          "write_access": "none",
-          "service_name": "ldapou"
-        }
-      },
-      {
-        "publisher_namespace": "EnginesSystem",
-        "type_path": "ldap",
-        "variables": {
-          "type": "group",
-          "cn": "_Engines_Builder(engine_name)",
-          "read_access": "all",
-          "write_access": "none",
-          "service_name": "ldapgrp"
-        }
-      },
-      {
-        "publisher_namespace": "EnginesSystem",
         "type_path": "ldap_access",
         "variables": {
           "access_dn": "uid=_Engines_Builder(engine_name),ou=hosts,ou=Engines,dc=engines,dc=internal",
           "ldap_password": "_Engines_System(random(8))",
           "service_name": "_Engines_Builder(engine_name)",
-          "type": "access"
+          "type": "access",
+          "group_membership": null
+        }
+      },
+      {
+        "publisher_namespace": "EnginesSystem",
+        "type_path": "ldap_group",
+        "variables": {
+          "type": "group",
+          "cn": "_Engines_Builder(engine_name)",
+          "read_access": "all",
+          "write_access": "none",
+          "service_name": "group_Engines_Field(cn)"
+        }
+      },
+      {
+        "publisher_namespace": "EnginesSystem",
+        "type_path": "ldap_ou",
+        "variables": {
+          "type": "ou",
+          "cn": null,
+          "read_access": "all",
+          "write_access": null,
+          "service_name": "ou_Engines_Field(cn)"
         }
       }
     ],
