@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2019-10-31T13:20:01+11:00"
+    "timestamp": "2019-11-09T17:27:53+11:00"
   },
   "software": {
     "base": {
@@ -362,17 +362,6 @@
       }
     ],
     "schedules": [
-      {
-        "label": "midnight",
-        "timespec": {
-          "minute": "12",
-          "hour": "0",
-          "day_of_month": "*",
-          "month": "*",
-          "day_of_week": "*"
-        },
-        "instruction": "restart"
-      },
       {
         "label": "list_users",
         "timespec": {
