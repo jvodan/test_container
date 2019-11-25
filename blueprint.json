@@ -11,7 +11,7 @@
     "blueprint": {
       "version": {
         "major": 0,
-        "minor": 0,
+        "minor": 1,
         "level": "beta",
         "patch": 0
       }
@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2019-11-09T17:27:53+11:00"
+    "timestamp": "2019-11-25T12:31:28+11:00"
   },
   "software": {
     "base": {
