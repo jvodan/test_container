@@ -22,7 +22,7 @@
         "label": "Test Engine"
       }
     },
-    "timestamp": "2019-11-25T12:31:28+11:00"
+    "timestamp": "2020-01-14T10:22:47+11:00"
   },
   "software": {
     "base": {
@@ -30,6 +30,7 @@
       "framework": "apache_php",
       "deployment_type": "web",
       "http_protocol": "https_and_http",
+      "sudo_list": "/home/engines/scripts/actionsators/rm_test_entry.sh /home/engines/scripts/actionsators/list_entries.sh",
       "memory": {
         "required": 96,
         "recommended": 96
