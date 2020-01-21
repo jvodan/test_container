@@ -98,7 +98,8 @@
         "value": "https://github.com/MarkRatjens/filesystem.git"
       },
       "variables": {
-        "name": "data"
+        "name": "data",
+        "path": "/home/fs/fstwo"
       }
     },
     {
