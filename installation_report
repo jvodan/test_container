@@ -1,0 +1,7 @@
+Built _Engines_Builder(engine_name)
+goto to _Engines_Builder(http_protocol)://_Engines_Builder(fqdn)
+Login  with an Engines mysql service's credentials
+Host: _Engines_Environment(dbhost)
+Name: _Engines_Environment(dbname)
+DB User _Engines_Environment(dbuser)
+Password _Engines_Environment(dbpasswd)
