@@ -118,21 +118,6 @@
       "variables": {
         "name": "db2"
       }
-    },
-    {
-      "descriptor": {
-        "value": "https://github.com/MarkRatjens/ldap_access.git"
-      }
-    },
-    {
-      "descriptor": {
-        "value": "https://github.com/MarkRatjens/ldap_group.git"
-      }
-    },
-    {
-      "descriptor": {
-        "value": "https://github.com/MarkRatjens/ldap_ou.git"
-      }
     }
   ],
   "environment": {
