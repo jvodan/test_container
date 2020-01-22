@@ -90,21 +90,20 @@
   "dependencies": [
     {
       "descriptor": {
-        "value": "https://github.com/MarkRatjens/filesystem.git"
+        "value": "https://github.com/MarkRatjens/filesystem.git",
+        "identifier": "file_system_1"
       }
     },
     {
       "descriptor": {
-        "value": "https://github.com/MarkRatjens/filesystem.git"
-      },
-      "variables": {
-        "name": "data",
-        "path": "/home/fs/fstwo"
+        "value": "https://github.com/MarkRatjens/filesystem.git",
+        "identifier": "file_system_2"
       }
     },
     {
       "descriptor": {
-        "value": "https://github.com/MarkRatjens/mysqld.git"
+        "value": "https://github.com/MarkRatjens/mysqld.git",
+        "identifier": "db_1"
       },
       "variables": {
         "name": "name",
@@ -113,10 +112,12 @@
     },
     {
       "descriptor": {
-        "value": "https://github.com/MarkRatjens/mysqld.git"
+        "value": "https://github.com/MarkRatjens/mysqld.git",
+        "identifier": "db_2"
       },
       "variables": {
-        "name": "db2"
+        "username": "name",
+        "username": "username"
       }
     }
   ],
