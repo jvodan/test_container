@@ -66,23 +66,6 @@
       }
     }
   ],
-  "ports": [
-    {
-      "port": "12345",
-      "external": "12345",
-      "protocol": "tcp"
-    },
-    {
-      "port": "12346",
-      "external": "12346",
-      "protocol": "udp"
-    },
-    {
-      "port": "12347",
-      "external": "12347",
-      "protocol": "tcp_and_udp"
-    }
-  ],
   "sudos": [
     "rm_test_entry.sh",
     "list_entries.sh"
@@ -122,6 +105,23 @@
     }
   ],
   "environment": {
+    "ports": [
+      {
+        "port": "12345",
+        "external": "12345",
+        "protocol": "tcp"
+      },
+      {
+        "port": "12346",
+        "external": "12346",
+        "protocol": "udp"
+      },
+      {
+        "port": "12347",
+        "external": "12347",
+        "protocol": "tcp_and_udp"
+      }
+    ],
     "variables": [
       {
         "name": "test_envvar",
