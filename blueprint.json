@@ -10,7 +10,25 @@
     "license": {
       "label": "GNU GENERAL PUBLIC LICENSE V3",
       "url": "http://www.gnu.org/copyleft/gpl.html"
-    }
+    },
+    "packages": [
+      {
+        "descriptor": {
+          "value": "http://files.phpmyadmin.net/phpMyAdmin/4.6.4/phpMyAdmin-4.6.4-all-languages.tar.gz",
+          "extraction": "tar -xzpf"
+        }
+      },
+      {
+        "descriptor": {
+          "value": "https://github.com/EnginesBlueprints/test_package.git"
+        }
+      },
+      {
+        "descriptor": {
+          "value": "https://github.com/EnginesBlueprints/build_tests.git"
+        }
+      }
+    ]    
   },
   "framework": {
     "identifier": "apache_php",
@@ -35,34 +53,6 @@
     {
       "descriptor": {
         "value": "ppa:opencpn/opencpn"
-      }
-    }
-  ],
-  "packages": [
-    {
-      "descriptor": {
-        "value": "http://files.phpmyadmin.net/phpMyAdmin/4.6.4/phpMyAdmin-4.6.4-all-languages.tar.gz",
-        "extraction": "tar -xzpf"
-      }
-    },
-    {
-      "descriptor": {
-        "value": "https://github.com/EnginesBlueprints/test_package.git"
-      }
-    },
-    {
-      "descriptor": {
-        "value": "https://github.com/EnginesBlueprints/build_tests.git"
-      }
-    },
-    {
-      "descriptor": {
-        "value": "mysql-client"
-      }
-    },
-    {
-      "descriptor": {
-        "value": "make"
       }
     }
   ],
