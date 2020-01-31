@@ -47,30 +47,6 @@
       {
         "content": "#test_HTTP_CONF"
       }
-    ],
-    "modules": [
-      {
-        "name": "intl",
-        "type": "php",
-        "os_package": "php-intl"
-      },
-      {
-        "name": "negotiation",
-        "type": "apache"
-      },
-      {
-        "name": "rewrite",
-        "type": "apache"
-      },
-      {
-        "name": "php-zip",
-        "type": "php",
-        "os_package": "php-zip"
-      },
-      {
-        "name": "headers",
-        "type": "apache"
-      }
     ]
   },
   "repositories": [
@@ -84,6 +60,30 @@
     "rm_test_entry.sh",
     "list_entries.sh"
   ],
+  "modules": [
+    {
+      "name": "intl",
+      "type": "php",
+      "os_package": "php-intl"
+    },
+    {
+      "name": "negotiation",
+      "type": "apache"
+    },
+    {
+      "name": "rewrite",
+      "type": "apache"
+    },
+    {
+      "name": "php-zip",
+      "type": "php",
+      "os_package": "php-zip"
+    },
+    {
+      "name": "headers",
+      "type": "apache"
+    }
+  ],  
   "dependencies": [
     {
       "descriptor": {
