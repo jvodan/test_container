@@ -62,6 +62,30 @@
   ],
   "modules": [
     {
+      "name": "django",
+      "type": "python"
+    },
+    {
+      "name": "node-red",
+      "type": "npm"
+    },
+    {
+      "name": "dkjson",
+      "type": "lua"
+    },
+    {
+      "name": "cairo",
+      "type": "pecl"
+    },
+    {
+      "name": "Math_Complex",
+      "type": "pear"
+    },
+    {
+      "name": "rstudio",
+      "type": "r"
+    },
+    {
       "name": "intl",
       "type": "php",
       "os_package": "php-intl"
@@ -83,7 +107,7 @@
       "name": "headers",
       "type": "apache"
     }
-  ],  
+  ],
   "dependencies": [
     {
       "descriptor": {
