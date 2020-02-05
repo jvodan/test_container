@@ -30,6 +30,10 @@
       }
     ]
   },
+  "sudos": [
+    "rm_test_entry.sh",
+    "list_entries.sh"
+  ],
   "framework": {
     "identifier": "apache_php",
     "custom_php_inis": [
@@ -56,9 +60,13 @@
       }
     }
   ],
-  "sudos": [
-    "rm_test_entry.sh",
-    "list_entries.sh"
+  "os_packages": [
+    {
+      "identifier": "mysql-client"
+    },
+    {
+      "identifier": "make"
+    }
   ],
   "modules": [
     {
