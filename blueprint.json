@@ -62,6 +62,12 @@
   ],
   "os_packages": [
     {
+      "identifier": "php-intl"
+    },
+    {
+      "identifier": "php-zip"
+    },
+    {
       "identifier": "mysql-client"
     },
     {
@@ -95,8 +101,7 @@
     },
     {
       "name": "intl",
-      "type": "php",
-      "os_package": "php-intl"
+      "type": "php"
     },
     {
       "name": "negotiation",
@@ -107,9 +112,8 @@
       "type": "apache"
     },
     {
-      "name": "php-zip",
-      "type": "php",
-      "os_package": "php-zip"
+      "name": "zip",
+      "type": "php"
     },
     {
       "name": "headers",
