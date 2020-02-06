@@ -1,38 +1,36 @@
 {
-  "software": {
-    "title": "Test Container",
-    "description": "Could be anything really",
-    "memory_usage": {
-      "required": 96,
-      "recommended": 96
-    },
-    "protocol": "https_and_http",
-    "license": {
-      "label": "GNU GENERAL PUBLIC LICENSE V3",
-      "url": "http://www.gnu.org/copyleft/gpl.html"
-    },
-    "packages": [
-      {
-        "descriptor": {
-          "value": "http://files.phpmyadmin.net/phpMyAdmin/4.6.4/phpMyAdmin-4.6.4-all-languages.tar.gz",
-          "extraction": "tar -xzpf"
-        }
-      },
-      {
-        "descriptor": {
-          "value": "https://github.com/EnginesBlueprints/test_package.git"
-        }
-      },
-      {
-        "descriptor": {
-          "value": "https://github.com/EnginesBlueprints/build_tests.git"
-        }
-      }
-    ]
+  "title": "Test Container",
+  "description": "Could be anything really",
+  "memory_usage": {
+    "required": 96,
+    "recommended": 96
+  },
+  "protocol": "https_and_http",
+  "license": {
+    "label": "GNU GENERAL PUBLIC LICENSE V3",
+    "url": "http://www.gnu.org/copyleft/gpl.html"
   },
   "sudos": [
     "rm_test_entry.sh",
     "list_entries.sh"
+  ],
+  "packages": [
+    {
+      "descriptor": {
+        "value": "http://files.phpmyadmin.net/phpMyAdmin/4.6.4/phpMyAdmin-4.6.4-all-languages.tar.gz",
+        "extraction": "tar -xzpf"
+      }
+    },
+    {
+      "descriptor": {
+        "value": "https://github.com/EnginesBlueprints/test_package.git"
+      }
+    },
+    {
+      "descriptor": {
+        "value": "https://github.com/EnginesBlueprints/build_tests.git"
+      }
+    }
   ],
   "framework": {
     "identifier": "apache_php",
