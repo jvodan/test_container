@@ -60,16 +60,16 @@
   ],
   "os_packages": [
     {
-      "identifier": "php-intl"
+      "name": "php-intl"
     },
     {
-      "identifier": "php-zip"
+      "name": "php-zip"
     },
     {
-      "identifier": "mysql-client"
+      "name": "mysql-client"
     },
     {
-      "identifier": "make"
+      "name": "make"
     }
   ],
   "modules": [
