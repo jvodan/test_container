@@ -1,7 +1,7 @@
 Built ^^engine_name^^
 goto to ^^http_protocol^^://^^fqdn^^
 Login  with an Engines mysql service's credentials
-Host: ^^dbhost^^
-Name: ^^dbname^^
-DB User ^^dbuser^^
-Password ^^dbpasswd^^
+Host: ^^db_2.host^^
+Name: db_2
+DB User ^^db_2.username^^
+Password ^^db_2.password^^

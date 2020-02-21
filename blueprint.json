@@ -220,24 +220,19 @@
   ],
   "data": [
     {
-      "path": "/home/app/fresh_dir_perm_test",
-      "name": "^^engine_name^^"
+      "path": "/home/app/fresh_dir_perm_test"
     },
     {
-      "path": "/home/app/home_persistent",
-      "name": "^^engine_name^^"
+      "path": "/home/app/home_persistent"
     },
     {
-      "path": "/usr/local/local_persist",
-      "name": "^^engine_name^^"
+      "path": "/usr/local/local_persist"
     },
     {
-      "path": "/home/home_dir/home_dir_persist",
-      "name": "^^engine_name^^"
+      "path": "/home/home_dir/home_dir_persist"
     },
     {
-      "path": "/home/app/test_package_dest/test_persist_dir",
-      "name": "^^engine_name^^"
+      "path": "/home/app/test_package_dest/test_persist_dir"
     },
     {
       "path": "/home/app/persistent",
@@ -246,8 +241,7 @@
   ],
   "source": [
     {
-      "path": "app/fresh_test_persistent_file",
-      "name": "^^engine_name^^"
+      "path": "app/fresh_test_persistent_file"
     },
     {
       "path": "app/test_package_dest/test_persist_file",
