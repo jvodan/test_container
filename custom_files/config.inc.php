@@ -9,7 +9,7 @@
   * @package PhpMyAdmin
   */
 
-  $cfg['PmaAbsoluteUri'] = 'https://^^fqdn^^/';
+  $cfg['PmaAbsoluteUri'] = 'https://^^domain.fqdn^^/';
 
 /**
   * This is needed for cookie based authentication to encrypt password in
