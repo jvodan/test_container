@@ -118,7 +118,7 @@
       "type": "apache"
     }
   ],
-  "dependencies": [
+  "bindings": [
     {
       "descriptor": {
         "value": "https://github.com/MarkRatjens/filesystem.git",
