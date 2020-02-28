@@ -135,12 +135,20 @@
       "descriptor": {
         "value": "https://github.com/MarkRatjens/mysqld.git",
         "identifier": "db_1"
+      },
+      "variables": {
+        "name": "name",
+        "username": "username"
       }
     },
     {
       "descriptor": {
         "value": "https://github.com/MarkRatjens/mysqld.git",
         "identifier": "db_2"
+      },
+      "variables": {
+        "username": "name",
+        "username": "username"
       }
     }
   ],
