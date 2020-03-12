@@ -120,21 +120,21 @@
   ],
   "bindings": [
     {
+      "identifier": "file_system_1",
       "descriptor": {
-        "value": "https://github.com/MarkRatjens/filesystem.git",
-        "identifier": "file_system_1"
+        "value": "https://github.com/MarkRatjens/filesystem.git"
       }
     },
     {
+      "identifier": "file_system_2",
       "descriptor": {
-        "value": "https://github.com/MarkRatjens/filesystem.git",
-        "identifier": "file_system_2"
+        "value": "https://github.com/MarkRatjens/filesystem.git"
       }
     },
     {
+      "identifier": "db_1",
       "descriptor": {
-        "value": "https://github.com/MarkRatjens/mysqld.git",
-        "identifier": "db_1"
+        "value": "https://github.com/MarkRatjens/mysqld.git"
       },
       "variables": {
         "name": "name",
@@ -142,9 +142,9 @@
       }
     },
     {
+      "identifier": "db_2",
       "descriptor": {
-        "value": "https://github.com/MarkRatjens/mysqld.git",
-        "identifier": "db_2"
+        "value": "https://github.com/MarkRatjens/mysqld.git"
       },
       "variables": {
         "name": "name",
