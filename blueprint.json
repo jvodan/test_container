@@ -33,23 +33,26 @@
     }
   ],
   "framework": {
-    "identifier": "apache_php",
+    "identifier": "php",
     "custom_php_inis": [
       {
         "content": "#test_php_ini"
       }
     ],
-    "htaccess_files": [
-      {
-        "directory": "setup",
-        "content": "#test htacess"
-      }
-    ],
-    "httpd_configurations": [
-      {
-        "content": "#test_HTTP_CONF"
-      }
-    ]
+    "web_server": {
+      "identifier": "apache",
+      "htaccess_files": [
+        {
+          "directory": "setup",
+          "content": "#test htacess"
+        }
+      ],
+      "httpd_configurations": [
+        {
+          "content": "#test_HTTP_CONF"
+        }
+      ]
+    }
   },
   "repositories": [
     {
