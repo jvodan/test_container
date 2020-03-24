@@ -214,6 +214,42 @@
       "recursive": true
     }
   ],
+  "persistent_directories": [
+    {
+       "path": "/home/app/fresh_dir_perm_test",
+       "volume_name": "_Engines_Builder(engine_name)"
+     },
+     {
+       "path": "/home/app/home_persistent",
+       "volume_name": "_Engines_Builder(engine_name)"
+     },
+     {
+       "path": "/usr/local/local_persist",
+       "volume_name": "_Engines_Builder(engine_name)"
+     },
+     {
+       "path": "/home/home_dir/home_dir_persist",
+       "volume_name": "_Engines_Builder(engine_name)"
+     },
+     {
+       "path": "/home/app/test_package_dest/test_persist_dir",
+       "volume_name": "_Engines_Builder(engine_name)"
+     },
+     {
+       "path": "/home/app/persistent",
+       "volume_name": "data"
+     }
+    ],
+    "persistent_files": [
+     {
+       "path": "app/fresh_test_persistent_file",
+       "volume_name": "_Engines_Builder(engine_name)"
+     },
+     {
+       "path": "app/test_package_dest/test_persist_file",
+       "volume_name": "data"
+     }
+  ],`
   "replacements": [
     {
       "string": "/TBLE/s//TABLE/",
