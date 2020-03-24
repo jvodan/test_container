@@ -249,7 +249,7 @@
        "path": "app/test_package_dest/test_persist_file",
        "volume_name": "data"
      }
-  ],`
+  ],
   "replacements": [
     {
       "string": "/TBLE/s//TABLE/",
